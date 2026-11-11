@@ -22,3 +22,17 @@ ul {
 li {
   margin: 12px 0;
 }
+.projects {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.project-card {
+  background-color: white;
+  width: 250px;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
