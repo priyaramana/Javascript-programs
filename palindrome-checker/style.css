@@ -1,0 +1,48 @@
+body{
+  background-color:lightblue;
+  margin:0;
+  display: flex;
+  justify-content: center;
+  flex-direction:column;
+  min-height: 100vh;
+  align-items: center;
+}
+.palindrome-checker{
+  background-color: white;
+  padding: 25px;
+  border-radius: 12px;
+  gap: 15px;
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+}
+#palindrome-input{
+  padding: 10px;
+  border: 1px solid gray;
+  border-radius: 6px;
+  font-size: 16px;
+}
+#check{
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+#clear{
+   background-color: #e0e0e0;
+  color: #333;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+#check:hover{
+  background-color: #388e3c;
+  transition: 0.3s;
+}
+#clear:hover{
+  background-color: #388e3c;
+  transition: 0.3s;
+}
