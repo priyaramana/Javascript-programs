@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Money Tracker</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>    
+<body>
+<h1> Money Tracker </h1>
+<section>
+<div id="Dashboard">
+    <div class="card">Total Amount lent : 
+      <span id="totlenamt"></span></div>
+    <div class="card">Total Amount Received : 
+      <span id="totrecvd"></span></div>
+    <div class="card">Total Pending Amount : 
+      <span id="totpendng"></span></div>
+    <div class="card">Total Borrowers : 
+      <span id="totborrwrs"></span></div>
+</div>
+<h2>Borrower details</h2>
+<button id="addBorrowerbtn">Add Borrower</button>
+<div class="table-container">
+<table>
+    <thead>
+        <tr>
+          <th>Person name</th>
+          <th>Amount lent</th>
+          <th>Repayment Frequency</th>
+          <th>Duration</th>
+          <th>Amount Repaid</th>
+          <th>PendingAmount</th>
+          <th>Action</th>
+        </tr>
+    </thead>
+    
+    <tbody id="borrowerTableBody"></tbody>
+</table>
+</div>
+</section>
+<form id="AddBorrowerForm" class="borrower-form">
+    <h1>Add New Borrower</h1>
+    <label for="PersonName">person name</label>
+    <input type="text" id="PersonName">
+    <label for="AmountLent">AmountLent</label>
+    <input type="Number" id="LentAmount">
+    <label>RepaymentFrequency</label>
+    <select id="RepaymentFrequency">
+        <option id="Daily">Daily</option>
+        <option id="Weekly">Weekly</option>
+    </select>
+    <label for="Duration">RepaymentDuration</label>
+    <input type="Number" id="Duration">
+    <label for="RepaidAmount">AmountRepaid</label>
+    <input type="Number" id="RepaidAmount">
+    <label for="PendingAmount">AmountPending</label>
+    <input type="Number" id="PendingAmount">
+    <button type="button" id="saveBorrower">Save</button>
+    <button type="button" id="closeBorrowerForm">Close</button>
+</form>
+<script src="script.js"></script>
+</body>
+
+</html>
