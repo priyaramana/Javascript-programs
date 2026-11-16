@@ -88,7 +88,6 @@ borrrowerbtn.addEventListener("click",()=>{
     repaidAmount.disabled = false
     pendingAmount.disabled = false
 
-    addForm.style.display = "none"
     personName.value = ""
     amountLent.value = ""
     repaymentFrequency.value = ""
