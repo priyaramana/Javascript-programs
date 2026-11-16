@@ -7,7 +7,30 @@
 </head>    
 <body>
 <h1> Money Tracker </h1>
+
 <section>
+<div id="resetPasswordForm" style="display: none;">
+    <h3>Reset Password</h3>
+
+    <label for="newPassword">New Password</label>
+    <input type="password" id="newPassword">
+
+    <label for="confirmPassword">Confirm Password</label>
+    <input type="password" id="confirmPassword">
+
+    <button type="button" id="updatePasswordBtn">
+        Update Password
+    </button>
+</div>    
+<div id="loginForm">
+    <label for="email">Email</label>
+    <input type="email" id="email" required>
+
+    <label for="pwd">Password</label>
+    <input type="password" id="pwd" required>
+
+    <button type="button" id="loginBtn">Login</button>
+</div>    
 <div id="Dashboard">
     <div class="card">Total Amount lent : 
       <span id="totlenamt"></span></div>
@@ -58,6 +81,7 @@
     <button type="button" id="saveBorrower">Save</button>
     <button type="button" id="closeBorrowerForm">Close</button>
 </form>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 <script src="script.js"></script>
 </body>
 
